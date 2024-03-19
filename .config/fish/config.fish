@@ -14,7 +14,7 @@ if test "$os" = Darwin
     set -U fish_user_paths /Users/martin/.local/bin /Users/martin/.local.bin /Applications /opt/homebrew/bin /opt/homebrew/sbin /opt/homebrew/opt/libpq/bin /Users/martin/go/bin /Users/martin/.omnisharp/bin /Users/martin/.cargo/bin
 else if test "$os" = Linux
     # do things for Linux
-    set -U fish_user_paths $HOME/.local/bin $HOME/.cargo/bin $fish_user_paths
+    set -U fish_user_paths $HOME/.local/bin $HOME/.cargo/bin $HOME/go/bin $fish_user_paths
 else
     # do things for other operating systems
 end
@@ -131,4 +131,6 @@ alias newtag='git tag -a'
 alias mctunnel="cloudflared access tcp --hostname minecraft.clenchedgaming.com --url localhost:25565"
 alias pgtunnel="cloudflared access tcp --hostname databases.clenchedgaming.com/pgs --url localhost:5434"
 
-fastfetch
+neofetch
+
+starship init fish | source
