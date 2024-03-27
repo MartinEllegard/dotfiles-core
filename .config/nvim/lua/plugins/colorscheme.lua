@@ -1,17 +1,4 @@
 return {
-  -- {
-  --     "ellisonleao/gruvbox.nvim",
-  --     lazy = false,
-  --     priority = 1000,
-  -- },
-  --
-  -- -- Configure LazyVim to load gruvbox
-  -- {
-  --     "LazyVim/LazyVim",
-  --     opts = {
-  --         colorscheme = "gruvbox",
-  --     },
-  -- },
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -20,6 +7,10 @@ return {
     opts = {
       flavour = "mocha",
       transparent_background = true,
+      term_colors = true,
+      dim_inactive = {
+        enabled = false,
+      },
       integrations = {
         aerial = true,
         alpha = true,
@@ -34,7 +25,10 @@ return {
         lsp_trouble = true,
         mason = true,
         markdown = true,
-        mini = true,
+        mini = {
+          enabled = true,
+          indentscope_color = "text",
+        },
         native_lsp = {
           enabled = true,
           underlines = {
@@ -44,7 +38,7 @@ return {
             information = { "undercurl" },
           },
         },
-        navic = { enabled = true, custom_bg = "lualine" },
+        navic = { enabled = true, custom_bg = "NONE" },
         neotest = true,
         neotree = true,
         noice = true,
