@@ -1,3 +1,4 @@
+local theme = os.getenv("THEME") or "catppuccin"
 return {
   {
     "catppuccin/nvim",
@@ -56,7 +57,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = theme,
     },
   },
 }
