@@ -131,6 +131,6 @@ alias newtag='git tag -a'
 alias mctunnel="cloudflared access tcp --hostname minecraft.clenchedgaming.com --url localhost:25565"
 alias pgtunnel="cloudflared access tcp --hostname databases.clenchedgaming.com/pgs --url localhost:5434"
 
-neofetch
+#neofetch
 
-starship init fish | source
+#starship init fish | source
