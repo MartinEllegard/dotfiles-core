@@ -32,7 +32,7 @@ set TERM xterm-256color
 set EDITOR nvim
 
 # Set manpager
-set -x MANPAGER "lvim -c 'set ft=man'"
+set -x MANPAGER "nvim -c 'set ft=man'"
 ### SET OPTIONS END
 
 
@@ -47,16 +47,16 @@ end
 ### ALIAS
 
 # App shortcuts
-alias vim='lvim'
+alias vi='nvim'
+alias svi='sudo nvim'
 if test "$os" = Darwin
-    # do things for macOS
-    alias hvim="hx"
+    alias helix="hx"
 else if test "$os" = Linux
     # do things for Linux
-    alias hvim="helix"
+    alias hx="helix"
 else
     # do things for other operating systems
-    alias hvim="helix"
+    #alias hvim="helix"
 end
 
 # navigation
@@ -102,8 +102,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # Tmux
-alias start-work="tmux new-session -s work"
-alias work="tmux"
+alias txwork="tmux new-session -s work"
+alias txa="tmux a"
 
 # confirm before overwriting something
 alias cp="cp -i"
