@@ -1,7 +1,14 @@
 local wezterm = require("wezterm")
 
+local theme = os.getenv("THEME") or "gruvbox"
+if theme == "catppuccin" then
+	theme = "Catppuccin Mocha"
+elseif theme == "gruvbox" then
+	theme = "Gruvbox dark, medium (base16)"
+end
+
 return {
-	color_scheme = "Catppuccin Mocha",
+	color_scheme = theme,
 	enable_tab_bar = false,
 	font_size = 15.0,
 

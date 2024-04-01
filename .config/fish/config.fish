@@ -5,6 +5,8 @@ set -l os (uname)
 # Clear Path too avoid fish slowing down
 set -e fish_user_paths
 
+set --export THEME gruvbox
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH

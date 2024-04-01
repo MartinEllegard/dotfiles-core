@@ -1,5 +1,12 @@
 local theme = os.getenv("THEME") or "catppuccin"
+
 return {
+  {
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      transparent_mode = true,
+    },
+  },
   {
     "catppuccin/nvim",
     name = "catppuccin",
