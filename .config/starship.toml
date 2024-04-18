@@ -1,38 +1,36 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+#"$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = true
+#add_newline = true
 # A minimal left prompt
-format = """
-$all
-$directory$character
-"""
-palette = "gruvbox_dark"
+#format = """$all
+#$directory$character"""
+#palette = "gruvbox_dark"
 # move the rest of the prompt to the right
 #right_format = """$all"""
-right_format = ""
+#right_format = ""
 
-[directory.substitutions]
-'~/tests/starship-custom' = 'work-project'
+#[directory.substitutions]
+#'~/tests/starship-custom' = 'work-project'
 
 
-[aws]
-format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = 'bold blue'
-symbol = "  "
+#[aws]
+#format = 'on [$symbol($profile )(\($region\) )]($style)'
+#style = 'bold blue'
+#symbol = "  "
 
-[golang]
-format = '[ ](bold aqua)'
+#[golang]
+#format = '[ ](bold aqua)'
 
-[kubernetes]
-symbol = '☸ '
-disabled = false
-detect_files = ['Dockerfile']
-format = '[$context(\[$namespace\])]($style) '
-[kubernetes.context_aliases]
-'arn:aws:eks:us-west-2:577926974532:cluster/gal-kub-demo-cluster' = 'gal'
-
-[docker_context]
-disabled = true
+#[kubernetes]
+#symbol = '☸ '
+#disabled = false
+# detect_files = ['Dockerfile']
+# format = '[$context(\[$namespace\])]($style) '
+# [kubernetes.context_aliases]
+# 'arn:aws:eks:us-west-2:577926974532:cluster/gal-kub-demo-cluster' = 'gal'
+#
+# [docker_context]
+# disabled = true
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
