@@ -49,6 +49,7 @@ end
 ### ALIAS
 
 # App shortcuts
+alias please='sudo'
 alias vi='nvim'
 alias svi='sudo nvim'
 if test "$os" = Darwin
@@ -134,5 +135,7 @@ alias mctunnel="cloudflared access tcp --hostname minecraft.clenchedgaming.com -
 alias pgtunnel="cloudflared access tcp --hostname databases.clenchedgaming.com/pgs --url localhost:5434"
 
 #neofetch
+
+alias clipfix="wl-paste -t text -w sh -c 'xclip -selection clipboard -o > /dev/null 2> /dev/null || xclip -selection clipboard'"
 
 #starship init fish | source
