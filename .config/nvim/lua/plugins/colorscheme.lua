@@ -1,4 +1,4 @@
-local theme = os.getenv("THEME") or "catppuccin"
+local theme = os.getenv("THEME") or "gruvbox"
 
 return {
   {
